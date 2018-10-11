@@ -10,13 +10,13 @@ import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.*;
 import org.springframework.ui.*;
 import org.springframework.web.bind.annotation.*;
-import demo.dao.EventDAO;
+
 import demo.entities.Event;
 import demo.services.EventService;
 
 @Controller
-@RequestMapping("event")
-public class EventController {
+
+public class EventController  {
 
 	@Autowired
 	private EventService eventService;

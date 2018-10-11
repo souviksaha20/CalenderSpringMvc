@@ -20,7 +20,7 @@
 		<div class="form-style-5">
 	       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Event by names.." title="Type in a name"><br><br>
 		</div>
-		<table border="1" cellpadding="5" cellspacing="5" class="table" >
+		<table border="1" cellpadding="5" cellspacing="5" class="table"  id="myTable" >
 			<thead>
 			<tr>
 				<th>Id</th>
@@ -63,7 +63,7 @@
 		  table = document.getElementById("myTable");
 		  tr = table.getElementsByTagName("tr");
 		  for (i = 0; i < tr.length; i++) {
-		    td = tr[i].getElementsByTagName("td")[1];		    
+		    td = tr[i].getElementsByTagName("td")[1];
 		    if (td) {
 		      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
 		        tr[i].style.display = "";
